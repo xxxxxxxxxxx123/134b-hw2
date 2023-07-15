@@ -53,6 +53,11 @@
                     <img src="image-small.jpg" alt="Description of the image">
                 </picture>
 
+                <figure>
+                    <img src="image.jpg" alt="Description of the image">
+                    <figcaption>A beautiful landscape</figcaption>
+                  </figure>
+
                 <button>Click me</button>
             </article>
             <aside>
@@ -174,6 +179,18 @@
                         <option value="grapefruit">Grapefruit</option>
                     </select>
                 </fieldset>
+
+                <label for="fruit">Select a fruit:</label>
+                <input type="text" id="fruit" name="fruit" list="fruits">
+                
+                <datalist id="fruits">
+                  <option value="Apple">
+                  <option value="Banana">
+                  <option value="Orange">
+                  <option value="Grapefruit">
+                </datalist>
+              
+              
 
                 <button type="submit">Submit</button>
             </form>
