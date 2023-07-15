@@ -46,7 +46,12 @@
                         <li>Item 3</li>
                     </ol>
                 </p>
-                <img src="image.jpg" alt="Description of the image">
+                
+                <picture>
+                    <source srcset="image-large.jpg" media="(min-width: 1200px)">
+                    <source srcset="image-medium.jpg" media="(min-width: 800px)">
+                    <img src="image-small.jpg" alt="Description of the image">
+                </picture>
 
                 <button>Click me</button>
             </article>
@@ -118,24 +123,7 @@
                 
                 greet("John");
             </code></pre>
-            
-            <h1>ASCII Art </h1>
-  
-            <pre>
-                    ,___          .-;'
-                    `"-.`\_...._/`.`
-                ,      \        /
-            .-' ',    / ()   ()\
-            `'._   \  /()    .  (|
-                > .' ;,     -'-  /
-                / <   |;,     __.;
-                '-.'-.|  , \    , \
-                `>.|;, \_)    \_)
-                    `-;     ,    /
-                    \    /   <
-                        '. <`'-,_)
-                        '._)
-            </pre>
+
         <section>
         
         <hr>
