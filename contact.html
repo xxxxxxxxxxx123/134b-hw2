@@ -24,4 +24,51 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <h1>Contact Me</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </fieldset>
+                
+                <fieldset>
+
+                <label for="fruit">Select a fruit:</label>
+                    <select id="fruit" name="fruit">
+                        <option value="apple">Apple</option>
+                        <option value="banana">Banana</option>
+                        <option value="orange">Orange</option>
+                        <option value="grapefruit">Grapefruit</option>
+                    </select>
+                </fieldset>
+
+                <label for="fruit">Select a fruit:</label>
+                <input type="text" id="fruit" name="fruit" list="fruits">
+                
+                <datalist id="fruits">
+                    <option value="Apple">
+                    <option value="Banana">
+                    <option value="Orange">
+                    <option value="Grapefruit">
+                </datalist>
+            
+                <button type="submit">Submit</button>
+            </form>
+        <section>
+
+    </main>
+
 </body>
