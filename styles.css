@@ -7,6 +7,25 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-weight: 300;
+}
+
+.body {
+    display: flex;
+}
+
+.main {
+    display: flex;
+}
+
+footer {
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+    background-color: #333;
+}
+
 .navBar {
     display: flex;
     background-color: #333;
@@ -40,6 +59,31 @@
     margin-left: 20px;
 }
 
+/* media */
+.introduction {
+    text-align: center;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+.book-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.book-container img {
+    max-width: 100%; 
+    height: auto;
+}
+
 /* phone screen szie */
 @media only screen and (max-width: 600px) {
     body {
@@ -53,6 +97,9 @@
     .nav-list {
         flex-direction: column;
     }
+    .book-container {
+        grid-template-columns: auto;
+    }
 }
 
 /* ipad */
@@ -63,6 +110,9 @@
     .navBar li {
         margin: 10px 20px;
     }
+    .book-container {
+        grid-template-columns: auto auto ;
+    }    
 }
 
 /* regular website */
@@ -75,5 +125,7 @@
     .navBar li {
         margin: 10px 40px;
     }
+
 }
+
 

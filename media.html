@@ -15,19 +15,60 @@
 
 <body>
     <header>
-		<h1>john shen</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/media">Media</a></li>
-                <li><a href="/contact">Contact</a></li>
+        <nav class="navBar">
+            <a href="#" class="logo">JS</a>
+            <ul class="nav-list">
+                <li><a class="nav-item" href="/">Home</a></li>
+                <li><a class="nav-item" href="/media">Media</a></li>
+                <li><a class="nav-item" href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        
+        <section class="introduction">
+            <h1>
+                Books I like
+            </h1>
+            <p>
+                the following books i like
+            </p>
+        </section>
+
         <section>
+
+            <div class="book-container">
+                <div>
+                    <picture>
+                        <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 1200px)">
+                        <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 800px)">
+                        <img src="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" alt="Description of the image">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 1200px)">
+                        <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 800px)">
+                        <img src="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" alt="Description of the image">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 1200px)">
+                        <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 800px)">
+                        <img src="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" alt="Description of the image">
+                    </picture>
+                </div>  
+
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+            </div>
+
+              
             <h1>
                 An SVG circle 
             </h1>
@@ -35,16 +76,6 @@
             <svg width="200" height="200">
                 <circle cx="100" cy="100" r="50" fill="red" />
             </svg>
-
-            <h1>
-                Books I like
-            </h1>
-
-            <picture>
-                <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 1200px)">
-                <source srcset="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" media="(min-width: 800px)">
-                <img src="https://www.principles.com/assets/principles_journal-89cd5c1767ada036471779a796fb330b59ed4248c76e8afb90c513fca8713a1f.png" alt="Description of the image">
-            </picture>
 
             <figure>
                 <img src="https://m.media-amazon.com/images/I/4148C51GVhL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg" alt="Description of the image">
@@ -80,8 +111,11 @@
 
             <canvas id="myCanvas" width="400" height="200"></canvas>
     
-        <section>
-            
+        <section>  
     </main>
     
+    <footer>
+        <p>this is a footer</p>
+    </footer>
+
 </body>
