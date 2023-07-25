@@ -22,12 +22,28 @@ h1 {
     font-size: 3rem;
 }
 
+/* css transform */
+h1:hover {
+    -webkit-transform: rotate(5deg); /* WebKit */
+    -moz-transform: rotate(5deg); /* Mozilla */
+    -o-transform: rotate(5deg); /* Opera */
+    -ms-transform: rotate(5deg); /* Internet Explorer */
+    transform: rotate(5deg); /* regular */
+}
+
+
 h2 {
     font-size: 2rem;
 }
 
 h3 {
     font-size: 1.5rem;
+}
+
+.center {
+    display:inline-block; 
+    text-align: center;
+    width: 100%;
 }
 
 .btn-main {
@@ -61,9 +77,7 @@ h3 {
 }
 
 
-
 body {
-    /* display: flex; */
     background-color: #F5F5F5	;
 }
 
@@ -195,8 +209,6 @@ section article {
     margin: 10rem 0rem;
 }
 
-
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -265,7 +277,6 @@ section article {
     max-height: 100%;
 }
 
-
 /* book cards */
 .book-card {
     perspective: 150rem;
@@ -291,20 +302,35 @@ section article {
 }
   
 .card-surface.back {
-    transform: rotateY(-180deg);
+    transform: rotateY(-180deg); /* regular */
+    -webkit-transform: rotateY(-180deg); /* WebKit */
+    -moz-transform: rotateY(-180deg); /* Mozilla */
+    -o-transform: rotateY(-180deg); /* Opera */
+    -ms-transform: rotateY(-180deg); /* Internet Explorer */
+    
     background-color: #fff;
 }
+
+
   
 .card-surface.front {
     background-color:#FFF;
 }
 
 .book-card:hover .card-surface.front {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* regular */
+    -webkit-transform: rotateY(180deg); /* WebKit */
+    -moz-transform: rotateY(180deg); /* Mozilla */
+    -o-transform: rotateY(180deg); /* Opera */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
 }
 
 .book-card:hover .card-surface.back {
-    transform: rotateY(0deg);
+    transform: rotateY(0deg); /* regular */
+    -webkit-transform: rotateY(0deg); /* WebKit */
+    -moz-transform: rotateY(0deg); /* Mozilla */
+    -o-transform: rotateY(0deg); /* Opera */
+    -ms-transform: rotateY(0deg); /* Internet Explorer */
 }
 
 /* form */
@@ -344,6 +370,10 @@ fieldset >legend {
     .book-container {
         grid-template-columns: auto;
     }
+
+    #profile {
+        width: 100px;
+    }
 }
 
 /* ipad */
@@ -357,6 +387,9 @@ fieldset >legend {
     .book-container {
         grid-template-columns: auto auto ;
     }    
+    #profile {
+        width: 150px;
+    }
 }
 
 /* regular website */
@@ -368,6 +401,9 @@ fieldset >legend {
     }
     .navBar li {
         margin: 10px 40px;
+    }
+    #profile {
+        width: 200px;
     }
 
 }
