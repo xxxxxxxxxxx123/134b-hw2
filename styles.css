@@ -353,9 +353,6 @@ fieldset >legend {
 
 /* phone screen szie */
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
 
     .navBar {
         flex-direction: column;
